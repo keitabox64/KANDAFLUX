@@ -1,0 +1,93 @@
+//SCSS Document
+/* 参照 */
+@use "../global" as g;
+
+/* 中身 */
+.l-header {
+    height: 60px;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border: none; 
+            height: 60px;
+        }
+    }
+     &__open-button {
+        display: block;
+        padding-top: 10px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        span {
+        position: absolute;
+        height: 1px;
+        width: 25px;
+        background-color: g.$color-base;
+        display: block;
+        content:"";
+        &::before {
+        position: absolute;
+        height: 1px;
+        width: 25px;
+        background-color: g.$color-base;
+        display: block;
+        content:"";
+        bottom: -8px;
+        }
+        &::after {
+        position: absolute;
+        height: 1px;
+        width: 25px;
+        background-color: g.$color-base;
+        display: block;
+        content:"";
+        bottom: -16px;
+          }
+        }
+      } 
+      &__navigation {
+        display: none;
+      }
+}
+
+@include g.breakpoint(pc) {
+.l-header {
+  height: 80px;
+&__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+&__logo {
+    display: block;
+    img {
+        height: 100%;
+    }
+}
+&__open-button {
+  display: none;
+}
+&__close-button {
+  display: none;  
+}
+&__navigation {
+  display: block;
+  text-align: right; 
+}
+&__list {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      a {
+        font-size: 2.4rem;
+        color: g.$color-base;
+        padding: 26px 30px 0;
+        height: 80px;
+        }
+      }
+    }
+  }
+}

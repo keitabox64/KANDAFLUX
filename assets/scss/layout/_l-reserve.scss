@@ -1,0 +1,91 @@
+//SCSS Document
+/* 参照 */
+@use "../global" as g;
+
+.l-reserve {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    &__image {
+        height: 100vh;
+        background-image: url("/assets/image/component/ashirai_z_SP_test.jpg");
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    &__white-back {
+        position: absolute;
+        top: 200px;
+        height: 280px;
+        width: 100%;
+        background-color: g.$color-base;
+    }
+    &__title {
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 8px;
+        text-align: center;
+        font-size: 2.4rem;
+        color: g.$color-black;
+    }
+    &__description {
+        margin: 0 auto;
+        max-width: 208px;
+        text-align: center;
+        font-size: 1.6rem;
+        color: g.$color-black;
+    }
+}
+.c-button-tel {
+    margin: 8px auto 8px 0;
+    display: block;
+    padding: 0.3rem 1.3rem;
+    font-size: 1.6rem;
+    color: g.$color-black;
+    border: 1px solid g.$color-black;
+    border-radius: 10rem;
+}
+.c-button-reserve {
+    margin: 24px auto;
+    display: block;
+    text-align: center;
+    padding: 2.4rem 12rem;
+    color: g.$color-base;
+    background-color: g.$color-accent-3;
+}
+
+@include g.breakpoint(pc) {
+    .l-reserve {
+        position: relative;
+        height: 50vh;
+        &__image {
+            height: 70vh;
+            background-image: url("/assets/image/component/ashirai_z.jpg");
+            background-position: center;
+            background-size: auto;
+            background-repeat: no-repeat;
+        }
+        &__white-back {
+            position: absolute;
+            top: 620px;
+            height: 320px;
+            width: 100%;
+            background-color: g.$color-base;
+        }
+        &__title {
+            margin: 0 auto;
+            padding-top: 55px;
+            padding-bottom: 24px;
+            text-align: center;
+            font-size: 3.2rem;
+            color: g.$color-black;
+        }
+        &__description {
+            margin: 0 auto;
+            max-width: 325px;
+            text-align: center;
+            font-size: 1.6rem;
+            color: g.$color-black;
+        }
+    }
+}

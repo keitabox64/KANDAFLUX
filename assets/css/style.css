@@ -1,0 +1,1232 @@
+@charset "UTF-8";
+/* color
+ ────────────────────────────── */
+/* font-family
+ ────────────────────────────── */
+/* breakpoint
+ ────────────────────────────── */
+/* 参照されるので@forwardで書く */
+/* 参照 */
+/* base
+--------------------------- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #f9f9f9;
+  background-color: #060d17;
+  font-size: 1.6rem;
+  font-family: "M PLUS 1p", "Montserrat", sans-serif;
+  min-width: 350px;
+  font-weight: 500;
+  line-height: 2.4rem;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+video,
+object {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+  /* 画像の枠線のグラデーション */
+  border: 1px solid #8f1fee;
+  border-image: linear-gradient(to right, #8f1fee 0%, #ffef00 100%);
+  border-image-slice: 1;
+}
+
+a {
+  color: #0066c0;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* 参照index */
+/* 参照 */
+/* 中身 */
+.l-header {
+  height: 60px;
+}
+.l-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l-header__logo img {
+  border: none;
+  height: 60px;
+}
+.l-header__open-button {
+  display: block;
+  padding-top: 10px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.l-header__open-button span {
+  position: absolute;
+  height: 1px;
+  width: 25px;
+  background-color: #f9f9f9;
+  display: block;
+  content: "";
+}
+.l-header__open-button span::before {
+  position: absolute;
+  height: 1px;
+  width: 25px;
+  background-color: #f9f9f9;
+  display: block;
+  content: "";
+  bottom: -8px;
+}
+.l-header__open-button span::after {
+  position: absolute;
+  height: 1px;
+  width: 25px;
+  background-color: #f9f9f9;
+  display: block;
+  content: "";
+  bottom: -16px;
+}
+.l-header__navigation {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .l-header {
+    height: 80px;
+  }
+  .l-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .l-header__logo {
+    display: block;
+  }
+  .l-header__logo img {
+    height: 100%;
+  }
+  .l-header__open-button {
+    display: none;
+  }
+  .l-header__close-button {
+    display: none;
+  }
+  .l-header__navigation {
+    display: block;
+    text-align: right;
+  }
+  .l-header__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .l-header__list li a {
+    font-size: 2.4rem;
+    color: #f9f9f9;
+    padding: 26px 30px 0;
+    height: 80px;
+  }
+}
+/* 参照 */
+.l-footer {
+  min-height: 300px;
+  background-color: #060d17;
+  padding: 30px 0;
+  position: relative;
+}
+.l-footer__logo {
+  display: flex;
+  justify-content: center;
+}
+.l-footer__logo img {
+  border: none;
+  height: 60px;
+}
+.l-footer__site-map {
+  padding: 30px 0;
+}
+.l-footer__site-map ul {
+  display: flex;
+  justify-content: center;
+}
+.l-footer__site-map ul a {
+  font-size: 1.6rem;
+  color: #f9f9f9;
+  padding: 0 15px;
+}
+.l-footer__copyright {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #707070;
+}
+
+@media (min-width: 750px) {
+  .l-footer {
+    padding: 50px 0 60px;
+  }
+  .l-footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .l-footer__logo img {
+    height: 80px;
+  }
+  .l-footer__site-map {
+    padding: 0;
+  }
+  .l-footer__site-map ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .l-footer__site-map ul a {
+    font-size: 2.4rem;
+    padding: 0 30px;
+  }
+  .l-footer__site-map__copyright {
+    bottom: 60px;
+    font-size: 1.4rem;
+  }
+}
+/* 参照 */
+.l-reserve {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.l-reserve__image {
+  height: 100vh;
+  background-image: url("/assets/image/component/ashirai_z_SP_test.jpg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.l-reserve__white-back {
+  position: absolute;
+  top: 200px;
+  height: 280px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.l-reserve__title {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #060d17;
+}
+.l-reserve__description {
+  margin: 0 auto;
+  max-width: 208px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #060d17;
+}
+
+.c-button-tel {
+  margin: 8px auto 8px 0;
+  display: block;
+  padding: 0.3rem 1.3rem;
+  font-size: 1.6rem;
+  color: #060d17;
+  border: 1px solid #060d17;
+  border-radius: 10rem;
+}
+
+.c-button-reserve {
+  margin: 24px auto;
+  display: block;
+  text-align: center;
+  padding: 2.4rem 12rem;
+  color: #f9f9f9;
+  background-color: #C50000;
+}
+
+@media (min-width: 750px) {
+  .l-reserve {
+    position: relative;
+    height: 50vh;
+  }
+  .l-reserve__image {
+    height: 70vh;
+    background-image: url("/assets/image/component/ashirai_z.jpg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .l-reserve__white-back {
+    position: absolute;
+    top: 620px;
+    height: 320px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .l-reserve__title {
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 3.2rem;
+    color: #060d17;
+  }
+  .l-reserve__description {
+    margin: 0 auto;
+    max-width: 325px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #060d17;
+  }
+}
+/* 参照index */
+/* 参照 */
+/* SP */
+/* FV 動画 */
+.p-FV {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 100px;
+}
+.p-FV__pc {
+  display: none;
+}
+.p-FV__SP {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.p-FV__attention {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.p-FV__line-vertical {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  width: 1px;
+  height: 150px;
+  background-color: #f9f9f9;
+}
+
+/* トップメッセージ */
+.p-top-message__content {
+  height: 100vh;
+  background-image: url("/assets/image/top/entrance_SP.jpg");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  display: block;
+  text-align: center;
+}
+.p-top-message__title {
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 32px;
+  font-size: 3.2rem;
+}
+.p-top-message__sub-title {
+  display: inline-block;
+  padding-bottom: 24px;
+  text-align: left;
+  font-size: 1.8rem;
+}
+.p-top-message__description {
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+/* ニュース（使いまわすかも） */
+.p-news {
+  display: block;
+}
+.p-news__line {
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 1px solid #f9f9f9;
+}
+.p-news__list li {
+  padding-top: 24px;
+  display: inline-block;
+  text-align: left;
+}
+.p-news__list li time {
+  padding: 20px 0 20px 20px;
+}
+.p-news__list li h3 {
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 90%;
+  font-size: 1.4rem;
+}
+.p-news__display {
+  display: inline-block;
+  padding: 24px 0;
+  font-size: 1.2rem;
+  padding: 0 0.3rem;
+  color: #C50000;
+  background-color: #f9f9f9;
+}
+
+/* リッチボタンとあしらい */
+.c-decoration {
+  position: relative;
+  padding-top: 32px;
+  margin-bottom: 80px;
+  width: 95%;
+  display: block;
+  text-align: right;
+}
+.c-decoration__line {
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(to right, #8f1fee, #f9f9f9);
+}
+.c-decoration__btn {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  padding: 0.2rem 2rem;
+  width: 300px;
+}
+.c-decoration__btn::before {
+  transform: skewX(25deg);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border: 1px solid #f9f9f9;
+  border-image: linear-gradient(to right, #f9f9f9 0%, #ffef00 100%);
+  border-image-slice: 1;
+  background-color: #060d17;
+}
+
+/* トップ画面メニュー */
+.c-menu__list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+.c-menu__list li {
+  width: 45%;
+  font-size: 1.4rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.c-menu__list li h4 {
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+/* トップ画面タイトル */
+.c-title {
+  padding-bottom: 40px;
+}
+.c-title h2 {
+  text-align: center;
+  padding-bottom: 8px;
+  font-size: 3.2rem;
+}
+.c-title img {
+  margin: 0 auto;
+  border: none;
+  height: 10px;
+}
+
+/* コンセプト */
+.p-concept {
+  display: block;
+  text-align: center;
+}
+.p-concept__image-list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.p-concept__image-list li {
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.p-concept__sub-title {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 1.8rem;
+}
+.p-concept p {
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+/* Twitter */
+.p-twitter {
+  margin-bottom: 80px;
+}
+.p-twitter__timeline {
+  display: none;
+}
+
+/* アクセス */
+.p-access {
+  margin-bottom: 80px;
+}
+.p-access__content {
+  width: 90%;
+  margin: 0 auto;
+}
+.p-access__logo img {
+  margin: 0 auto;
+  padding-bottom: 24px;
+  border: none;
+  height: 80px;
+}
+.p-access__bar-name {
+  width: 90%;
+  text-align: left;
+  font-size: 2rem;
+  padding-bottom: 16px;
+}
+.p-access__address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.p-access__address-title {
+  display: inline-block;
+}
+.p-access__address-detail {
+  display: inline-block;
+}
+.p-access__detail {
+  padding-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.p-access__detail-title {
+  display: inline-block;
+}
+.p-access__detail-schedule {
+  display: inline-block;
+  text-align: right;
+}
+.p-access iframe {
+  width: 90%;
+  height: 300px;
+}
+
+/* PC */
+@media (min-width: 750px) {
+  /* FV 動画 */
+  .p-FV {
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .p-FV__pc {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .p-FV__SP {
+    display: none;
+  }
+  .p-FV__attention {
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .p-FV__line-vertical {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    width: 1px;
+    height: 150px;
+    background-color: #f9f9f9;
+  }
+
+  /* トップメッセージ */
+  .p-top-message {
+    padding-bottom: 120px;
+  }
+  .p-top-message__content {
+    height: 100vh;
+    background-image: url("/assets/image/top/entrance.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+  }
+  .p-top-message__title {
+    margin: 0 auto;
+    padding-top: 240px;
+    padding-bottom: 32px;
+    font-size: 8rem;
+  }
+  .p-top-message__sub-title {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 56px 100px;
+    text-align: left;
+    line-height: 4.8rem;
+    font-size: 3.2rem;
+  }
+  .p-top-message__description {
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+
+  /* ニュース（使いまわすかも） */
+  .p-news {
+    display: block;
+  }
+  .p-news__list li {
+    padding-top: 0;
+    display: block;
+    text-align: center;
+  }
+  .p-news__list li time {
+    padding: 30px;
+    font-size: 1.6rem;
+  }
+  .p-news__list li h3 {
+    display: inline-block;
+    width: 50%;
+    padding: 48px 0;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .p-news__display {
+    display: inline-block;
+    padding: 24px 0;
+    font-size: 1.6rem;
+    padding: 0 0.3rem;
+    color: #C50000;
+    background-color: #f9f9f9;
+  }
+
+  /* コンセプト */
+  .p-concept {
+    display: block;
+    text-align: center;
+  }
+  .p-concept__image-list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+  }
+  .p-concept__image-list li {
+    width: 45%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .p-concept__sub-title {
+    padding: 56px 300px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .p-concept p {
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  /* Twitter */
+  .p-twitter {
+    margin-bottom: 160px;
+  }
+  .p-twitter__timeline {
+    display: block;
+  }
+  .p-twitter__timeline-SP {
+    display: none;
+  }
+
+  /* アクセス */
+  .p-access {
+    margin-bottom: 160px;
+  }
+  .p-access__content {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .p-access__logo img {
+    margin: 0 auto;
+    padding-bottom: 24px;
+    border: none;
+    height: 100px;
+  }
+  .p-access__address-data {
+    display: block;
+  }
+  .p-access__bar-name {
+    width: 30%;
+    display: flex;
+    text-align: left;
+    font-size: 2rem;
+    padding-bottom: 16px;
+  }
+  .p-access__address {
+    display: inline-block;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+  }
+  .p-access__address-title {
+    display: inline-block;
+  }
+  .p-access__address-detail {
+    display: inline-block;
+  }
+  .p-access__detail {
+    padding-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+  }
+  .p-access__detail-title {
+    display: inline-block;
+  }
+  .p-access__detail-schedule {
+    display: inline-block;
+    text-align: right;
+  }
+  .p-access iframe {
+    width: 90%;
+    height: 600px;
+  }
+}
+/* PC */
+/* COMPONENT */
+@media (min-width: 750px) {
+  /* リッチボタンとあしらい */
+  .c-decoration {
+    padding-top: 80px;
+    margin-bottom: 200px;
+    width: 94%;
+  }
+  .c-decoration__line {
+    left: 35%;
+    width: 650px;
+  }
+  .c-decoration__btn {
+    margin: 0 auto;
+    font-size: 2.4rem;
+    padding: 1.5rem 6rem;
+  }
+
+  /* トップ画面メニュー */
+  .c-menu__list {
+    width: 90%;
+  }
+  .c-menu__list li {
+    width: 20%;
+    margin-bottom: 80px;
+  }
+  .c-menu__list li h4 {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    font-size: 1.6rem;
+  }
+
+  /* トップ画面タイトル */
+  .c-title {
+    padding-top: 50px;
+    padding-bottom: 96px;
+  }
+  .c-title h2 {
+    padding-bottom: 48px;
+    font-size: 9rem;
+  }
+  .c-title img {
+    height: 30px;
+  }
+}
+/* 参照index */
+/*--------------------------------------*
+* foundation
+*--------------------------------------*/
+/*--------------------------------------*
+* layout
+*--------------------------------------*/
+/*--------------------------------------*
+* page
+*--------------------------------------*/
